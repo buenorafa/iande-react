@@ -1,11 +1,12 @@
 "use client";
-import NavBar from "./components/NavBar";
-import TitleSection from "./components/TitleSection";
-import Card from "./components/Card";
-import Footer from "./components/Footer";
-// import Projects from "./assets/projects.json";
-import Link from "./components/Link";
-import Contact from "./components/Contact";
+import {
+  Card,
+  Contact,
+  Footer,
+  Link,
+  NavBar,
+  TitleSection,
+} from "./components";
 import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
 
@@ -16,19 +17,6 @@ const greenBackground =
   "bg-gradient-to-r from-lime-800 via-lime-700 to-lime-700";
 
 export default function Home() {
-  /* 
-  
-  - Nav ✅
-  - Waves (Criar um component das ondas)
-  - Section ✅
-  - Title ✅
-  - Cards ✅
-  - Map
-  - Contact - Mudar a cor do texto dentro dos inputs
-  - Footer ✅
-  
-  */
-
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -44,6 +32,7 @@ export default function Home() {
         console.log("Ocorreu um erro:", error);
       });
   }, []);
+
   return (
     <>
       <NavBar />
