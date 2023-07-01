@@ -114,7 +114,7 @@ export default function Home() {
           {/* Cards gerados dinamicamente */}
           {projects.map((content) => (
             <Card
-              id={content.link}
+              key={content.link}
               title={content.title}
               description={content.description}
               href={content.link}
