@@ -42,7 +42,6 @@ export default function PhoneInputComponent() {
         mask="(00) 0 0000-0000"
         onBlur={handleChange}
       />
-      {console.log(isValid)}
       {!isValid && (
         <span className="text-sm text-red-500">Telefone inválido</span>
       )}
