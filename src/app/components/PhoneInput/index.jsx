@@ -33,7 +33,7 @@ export default function PhoneInputComponent() {
       </label>
       <IMaskInput
         className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-950 leading-tight focus:outline-none focus:shadow-outline ${
-          !isValid ? "border-red-500 focus:border-red-500" : ""
+          !isValid ? "border-2 border-red-500 focus:border-red-500" : ""
         }`}
         id="phone"
         type="tel"
