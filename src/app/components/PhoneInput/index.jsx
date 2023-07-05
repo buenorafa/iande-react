@@ -13,7 +13,7 @@ export default function PhoneInputComponent() {
     return regex.test(value);
   }
 
-  const handleChange = (e) => {
+  const handleBlur = (e) => {
     const inputValue = e.target.value;
 
     if (inputValue == "" || isValidPhone(inputValue)) {
@@ -40,7 +40,7 @@ export default function PhoneInputComponent() {
         name="phone"
         placeholder="(11) 9 8888-8888"
         mask="(00) 0 0000-0000"
-        onBlur={handleChange}
+        onBlur={handleBlur}
       />
       {!isValid && (
         <span className="text-sm text-red-500">Telefone inválido</span>
